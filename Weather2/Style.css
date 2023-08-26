@@ -1,0 +1,245 @@
+/* The code begins with an @import rule that imports the "Open Sans" font from Google Fonts to be used throughout the webpage.*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* The * selector applies the following styles to all elements on the page: zero margin and padding, the "Open Sans" font as the default font-family, and the box-sizing property set to border-box.*/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+/* The body selector applies styles to the <body> element. It sets a background image, adjusts the width to fit its content, sets the font color to white, and modifies the object-fit property to contain.*/
+
+body {
+  background-image: url(background.jpeg);
+  object-fit: contain;
+   color: #fff;
+  
+  
+}
+  
+/* The h1 selector styles the <h1> element. It sets the font color to white, adds padding, centers the text, sets a background color, and adds border-radius to create a rounded appearance.*/
+
+h1 {
+  color: #fff;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 1.75rem;
+  background: #b3b818;
+  border-radius: 30px;
+}
+
+/* The .container class styles a container element. It sets the display to flex, creates a gap between child elements, and adds padding.*/
+
+.container {
+  display: flex;
+  gap: 35px;
+  padding: 30px;
+ 
+}
+
+/* The .weather-input class styles the weather input section. It sets the width to 550px.*/
+
+.weather-input {
+  width: 550px;
+  
+}
+
+/* The .weather-input input selector styles the input field within the weather input section. It sets the width to 100%, adds height, padding, margin, font-size, border-radius, border, background color, and text color.*/
+
+.weather-input input {
+  width: 100%;
+  height: 46px;
+  outline: none;
+  padding: 0 15px;
+  margin: 10px 0 20px 0;
+  font-size: 1 07rem;
+  border-radius: 30px;
+  border: solid #ccc;
+  background-color: #b5b51b;
+  color: #fff;
+}
+
+/* The .weather-input .separator class styles a separator element. It sets the height, width, margin, background color, and aligns its content to the center.*/
+
+.weather-input .separator {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The .weather-input .separator::before selector styles the content before the separator element. It adds content (the text "or"), sets the color, font size, padding, margin, and text alignment.*/
+
+.weather-input .separator::before {
+  content: "or";
+  color: white;
+  font-size: 1.18rem;
+  padding: o 15px;
+  margin-top: 4px;
+  background: transparent;
+  text-align: justify;
+}
+
+/* The .weather-input button selector styles the buttons within the weather input section. It sets the background color, width, padding, cursor, outline, border, color, font size, border radius, and transition for hover and active states.*/
+
+.weather-input button {
+  background-color: rgb(197, 197, 32);
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 100px;
+  transition: opacity 0.15s;
+  }
+
+  button:hover {
+    opacity: 0.8;
+}
+   button:active {
+    opacity: 0.5;
+   }
+
+   /* The .weather-input .location-btn selector styles the location button within the weather input section. It sets the background color.*/
+
+   .weather-input .location-btn {
+  background: #b5b51b;
+  
+}
+
+/* The .weather-data class styles the weather data section. It sets the width to 100%.*/
+
+.weather-data {
+  width: 100%;
+ }
+
+ /* The .current-weather class styles the current weather section. It sets the font color, display to flex, border-radius, padding, background color, and justifies the content.*/
+
+ .current-weather {
+  color: #fff;
+  display: flex;
+  border-radius: 30px;
+  padding: 20px 70px 20px 20px;
+  background: #b5b51b;
+  justify-content: space-between;
+}
+
+/* The .current-weather h2 selector styles the <h2> element within the current weather section. It sets the font size.*/
+
+.current-weather h2 {
+  font-size: 1.7rem;
+}
+
+/* The .weather-data h4 selector styles the <h4> elements within the weather data section. It sets the margin-top, font size, font weight, and color.*/
+
+.weather-data h4 {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+ }
+
+ /* The .current-weather .icon class styles the icon within the current weather section. It aligns the text to the center.*/
+  
+ .current-weather.icon {
+    text-align: center;
+  }
+    
+  /* The .current-weather .icon img selector styles the image within the icon of the current weather section. It sets the max-width and margin.*/
+  
+  .current-weather .icon img {
+    max-width: 120px;
+    margin-top: -15px;
+  }
+
+  /* The .current-weather .icon h6 selector styles the <h6> elements within the icon of the current weather section. It sets the margin-top and text transform.*/
+  
+  .current-weather .icon h6 {
+    margin-top: -10px;
+    text-transform: capitalize;
+  }
+
+  /* The .days-forecast h2 selector styles the <h2> elements within the days forecast section. It sets the font size and margin.*/
+  
+  .days-forecast h2 {
+    font-size: 1 .5rem;
+    margin: 20px 0;
+    }
+   
+    /* The .weather-cards class styles the weather cards section. It sets the display to flex and creates a gap between child elements.*/
+
+  .weather-cards {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* The .weather-cards .card selector styles the individual weather cards. It sets the list style to none, font color*/
+  
+  .weather-cards .card {
+    list-style: none;
+    color: #fff;
+    padding: 18px 16px;
+    border-radius: 5px;
+    background: #b5b51b;
+    width: calc(100% / 5);
+  }
+
+  .weather-cards .card img {
+    max-width: 70px;
+    margin: 5px 0 -12px 0;
+  }
+
+  /* @media (max-width: 1400px): This media query applies styles when the maximum width of the viewport is 1400 pixels or less. The following rules are applied:
+
+The padding of the current-weather section within the weather-data section is set to 20 pixels.
+The weather-cards section has its flex-wrap property set to wrap, allowing the weather cards to wrap onto the next line if necessary.
+The width of each card within the weather-cards section is calculated using the formula calc(100% / 4 - 15px). This means each card takes up one-fourth of the available width minus a 15-pixel margin.*/
+  
+@media (max-width: 1400px) {
+    .weather-data .current-weather {
+      padding: 20px;
+    }
+
+    .weather-cards {
+      flex-wrap: wrap;
+    }
+
+    .weather-cards .card {
+      width: calc(100% / 4 - 15px);
+    }
+  }
+   
+@media (max-width: 1200px) {
+  .weather-cards .card {
+    width: calc(100% / 3 - 15px
+    );
+  }
+}
+
+@media (max-width: 950px) {
+  .weather-input {
+    width: 450px;
+  }
+  .weather-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  .weather-input {
+    width: 100%;
+  }
+}
